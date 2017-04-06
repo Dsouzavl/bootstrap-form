@@ -7,43 +7,64 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
 <body>
-            <div class="container">
-                <form>
-                    <div class="form-group">    
-                    <label for="firstname">First Name</label>
-                    <input type="text" class="form-control" id="firstname" aria-describedby="name">
-                    <label for="lastname">Last Name</label>
-                    <input type="text" class="form-control" id="lastname" aria-describedby="name">
-                    </div>
-                    
-                    <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small></div>
-
-                
-
-                <div class="form-group">
-                <label for="name"></label>
-                <input type="email" class="form-control" id="name" aria-describedby="name"></div>
-
-                
-
+    <div class="container">
+        <form>
+            <!-- name input -->
+            <div class="form-group">
+                <div class="row">
+                <div class="col-lg-6">
+                <label for="firstname">First Name</label>
+                <input type="text" class="form-control" id="firstname" aria-describedby="name">
+                </div>
+                <div class="col-lg-6">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="form-control" id="lastname" aria-describedby="name">
+                </div>
+                </div>
             </div>
-      
+
+            <!--- phone input -->
+            <div class="form-group ">
+                <label for="phone">Phone</label>
+                <input type="text" class="form-control" id="phone" aria-describedby="phone" maxlength="20"></div>
+            <div class="form-group">
+
+            <!--birth input -->
+            <div class="form-group">
+                <label for="birth">Birth</label>
+                <input type="date" class="form-control" id="birth" aria-describedby="birth">
+            </div>
+
+            <!--username input -->
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="birth" aria-describedby=username>
+            </div>
             
-            <h1>Nome</h1>
-            <input type="text" name="username"></input>
-            <h1>Email</h1>
-            <input type="text" name="email"></input>
-            <h1>Senha</h1>
-            <input type="password" name="password" maxlength="11"></input>
-            <h1>Telefone</h1>
-            <input type="text" name="phone"></input>
-            <h1>Fale um pouco sobre você</h1>
-            <input type="text" name="username" size="200"></input>
-            <button class="btn btn-default btn-md">Submit</button>
+            <!--email input -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small></div>
+            
+            <!--password input -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" aria-describedby="password" maxlength="11"></div>
+                <small id="passwordHelpInline" class="text-muted">
+                Must be 8-20 characters long.
+                </small>
+            <div class="form-group">
+
+            <!--confirm password -->
+            <div class="form-group">
+                <label for="password">Confirm Password</label>
+                <input type="password" class="form-control" id="password" aria-describedby="password" maxlength="11"></div>
+            <div class="form-group">
+            
+            <!-- register button -->
+            <button type="submit" class="btn brn-lg btn-primary">Register</button>
         </form>
-    </form>
+    </div>  
 </body>
 </html>
